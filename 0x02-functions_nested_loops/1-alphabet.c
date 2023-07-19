@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 /**
  * print_alphabet - Print in lowercase.
  * Return: returns 0.
@@ -7,12 +6,11 @@
 
 void print_alphabet(void)
 {
-	char c = 'a';
+	int i;
 
-	while (c <= 'z')
+	for (i = 97; i <= 122; i++)
 	{
-		_putchar(c);
-		c++;
+		_putchar(i);
 	}
 	_putchar('\n');
 }
