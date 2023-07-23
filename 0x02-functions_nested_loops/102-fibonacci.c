@@ -9,21 +9,19 @@
 int main(void)
 {
 	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long fib1 = 1, fib2 = 2, sum;
 
-	for (count = 0; count < 50; count++)
+	printf("%lu, %lu", fib1, fib2);
+
+	for (count = 2; count < 50; count++)
 	{
 		sum = fib1 + fib2;
-		print("%lu", sum);
+		printf("%lu", sum);
 
 		fib1 = fib2;
 		fib2 = sum;
-
-		if (count == 49)
-			printf("\n");
-		else
-			printf(",");
 	}
+	printf("\n");
 
 	return (0);
 }
