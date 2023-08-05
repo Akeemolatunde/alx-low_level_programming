@@ -9,8 +9,7 @@
 int _atoi(char *s)
 {
 	int sig = 1, i = 0;
-
-	unsign int unsig = 0;
+	unsigned int unsig = 0;
 
 	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
 	{
