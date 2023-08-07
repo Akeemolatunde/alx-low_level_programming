@@ -8,8 +8,8 @@
  */
 char *craete_array(unsigned int size, char c)
 {
-	unsigned int i;
 	char *str;
+	unsigned int i;
 
 	str = malloc(sizeof(char) * size);
 	if (size == 0 || str == NULL)
