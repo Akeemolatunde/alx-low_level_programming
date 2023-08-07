@@ -1,28 +1,21 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * craete_array - create an array of characters
- * @size: an input for base of the array int
- * @c: store character strings
- * Return: a pointer to base character c
+ * craete_array - create an array of size and assign char c
+ * @size: size of array
+ * @c: char to assign
+ * Return: a pointer to array, NULL if fail
  */
 char *craete_array(unsigned int size, char c)
 {
 	unsigned int i;
-	char *ptr;
+	char *str;
 
-	if (size == 0)
-	{
+	str = malloc(sizeof(char) * size);
+	if (size == 0 || str == NULL)
 		return (NULL);
-	}
-	ptr = malloc(sizeof(char) * size);
-	if (ptr == NULL)
-	{
-		return (NULL);
-	}
+
 	for (i = 0; i < size; i++)
-	{
-		ptr[i] = c;
-	}
-	return (ptr);
+		str[i] = c;
+	return (str);
 }
