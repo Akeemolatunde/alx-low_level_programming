@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * craete_array - create an array of size and assign char c
  * @size: size of array
