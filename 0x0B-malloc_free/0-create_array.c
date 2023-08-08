@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 /**
- * craete_array - creates an array of chars
+ * create_array - creates an array of chars
  * @size: the size of the array
  * @c: the char to be filled in the array
  * Return: the array filled
  */
-char *craete_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
 	char *s;
