@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * craete_array - creates an array of chars
  * @size: the size of the array
