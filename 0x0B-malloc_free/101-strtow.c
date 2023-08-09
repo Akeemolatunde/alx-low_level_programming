@@ -17,7 +17,7 @@ void ch_free_grid(char **grid, size_t height)
 	}
 }
 /**
- * strtow - splits string to two
+ * strtow - splits string into two
  * @str: string with words to split
  * Return: pointer to new allocated memomry
  */
@@ -55,11 +55,11 @@ char **strtow(char *str)
 				}
 				break;
 			}
-			for (j = 0; al <= c; al++, j++)
-				aout[i][j] = str[al];
-			aout[i][j] = '\0';
 		}
-		aout[i] = NULL;
-		return (aout);
+		for (j = 0; al <= c; al++, j++)
+			aout[i][j] = str[al];
+		aout[i][j] = '\0';
 	}
+	aout[i] = NULL;
+	return (aout);
 }
