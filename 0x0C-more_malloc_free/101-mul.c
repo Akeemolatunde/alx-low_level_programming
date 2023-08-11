@@ -5,9 +5,9 @@
 #define  ERR_MSG "Error"
 
 /**
- * is_digit - check if a string contains a non-digit char
+ * is_digit - checks if a string contains a non-digit char
  * @s: string to be evaluated
- * Return: 0 if non digitisfound, 1 if digit found
+ * Return: 0 if non digit is found, 1 otherwise
  */
 int is_digit(char *s)
 {
@@ -48,10 +48,10 @@ void errors(void)
 }
 
 /**
- * main - multiply two positeve numbers
- * @argc: argument count
- * @argv: argument vector
- * Return: 0i
+ * main - multiplies two positive numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-		error();
+		errors();
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
