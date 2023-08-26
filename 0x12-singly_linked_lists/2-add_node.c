@@ -29,3 +29,22 @@ list_t *add_node(list_t **head, const char *str)
 		}
 		return (*head);
 }
+/**
+ * len - get the length of str (string)
+ * @str: the string to get it length
+ * Return: length of the string
+ */
+
+int len(const char *str)
+{
+	int i;
+
+	if (str == NULL)
+		return (0);
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
